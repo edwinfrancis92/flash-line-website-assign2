@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Payment" />
+  <meta name="keywords" content="Central City Flash-Line, The Flash, Train, Ticket, Sales, Flash-Line, Interstate, Enquire, Book, Booking, Payment" />
+  <meta name="author" content="Edwin Cheah"  />
+ <!-- Viewport set to scale 1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.o"/>
+  
+
+  <title>Flash-Line - Payment Checkout</title>
+  <link rel = "icon" href="images/logo.png" type="image/favicon.ico">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/ipad.css" rel="stylesheet">
+  <link href="styles/mobile.css" rel="stylesheet">
+  <link href="styles/laptop_odd.css" rel="stylesheet">
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+</head>
+
+
+<!-- Body -->
+<body id="payment-body">
+    <header class=header>
+        <a href="index.html" id=logo><img src="images/logo.png" alt="Flash-Line Logo" title="Flash-Line Home"/></a>
+        <div class=Welcome>
+            <h1 id=Welcome_Title><em>Flash-line</em></h1>
+            <h2 id=flash-tag>The fastest interstate train service on the planet!</h2>
+        </div>
+    </header>
+
+
+
+    <!-- Navigation bar below -->  
+
+    <div class=nav>
+        <button class="Mobile-Menu-Button">Menu</button>
+        <nav class=main-nav>
+            <a class="nav-button" id="nav-1" href="index.html">Home</a>
+            <a class="nav-button" href="about.html">About</a>
+            <a class="nav-button"  href="product.html">Product</a>
+            <a class="nav-button"  href="enquire.html">Enquire</a>
+            <a class="nav-button"  href="enhancements.html">Enhancements 1</a>
+            <a class="nav-button"  href="enhancements2.html">Enhancements 2</a>
+        </nav>
+    </div>
+
+
+
+     <!-- Breadcrumbs below -->   
+
+    <div class="bread">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs_item">
+          <a class="breadcrumbs_link" href="enquire.html">
+            Enquire
+          </a>
+        </li>
+        <li class="breadcrumbs_item">
+            <a class="breadcrumbs_link_active" href="payment.html">
+                Payment
+              </a>
+        </li>
+      </ul> 
+    </div>
+
+    <!-- Payment Form -->
+    <div id="timer"></div>
+    <section class=body-info id =payment-container>   
+
+        <H3>Checkout</H3>
+        
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php" id="payment_Form">
+              <fieldset>
+                <legend>Purchase Summary</legend>
+
+                <fieldset>
+                  <legend>Name</legend>
+                  <p>
+                    First Name: <span id="confirm_first_name"></span><br>
+                    Last Name: <span id="confirm_last_name"></span><br>
+                  </p>
+                </fieldset>
+
+                <fieldset id=Form-Fieldset-2>
+                  <legend>Address:</legend>
+                  <p>
+                    Street Address: <span id="confirm_Street_Add"></span><br>
+                    Suburb/Town: <span id="confirm_Suburb/Town"></span><br>
+                    State: <span id="confirm_State"></span><br>
+                    Postal Code: <span id="confirm_Postal"></span><br>
+                  </p>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Contact Details</legend>
+                  <p>
+                    Email: <span id="confirm_Email"></span><br>
+                    Phone Number: <span id="confirm_Phone_Number"></span><br>
+                    Prefered Contact Method: <span id="confirm_Pref_Contact"></span><br>
+                  </p>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Booking Details</legend>
+                    <p>
+                    <!-- Visible Ticket Details Fields -->
+                    <table id = "ticket_summary">
+                      <tr>
+                        <th>
+                          Ticket Purchase Summary
+                        </th>
+                        <th>
+                          Price
+                        </th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span id="confirm_Tickets"></span>
+                          <br>
+                          <ul id="ticket_Price_Breakdonw">
+                            <li id="desti_Select"></li>
+                            <li id="seat_Select"></li>
+                            <li id="ticket_Quant"></li>
+                          </ul>
+                          
+                        </td>
+                        <td rowspan="2">
+                          <span id ="ticket_Cost"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Travel Date (YYYY-MM-DD): <span id="confirm_Travel_Date"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          Meal Order Summary
+                        </th>
+                        <th>
+                          Price
+                        </th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span id="confirm_Meal_Summary"></span><br>
+                          <ul>
+                            <li><span id="meal_Combo"></span></li>
+                            <li><span id="confirm_Sides"></span>
+                            <li><span id="confirm_Drinks"></span></li>
+                            <li><span id="total_meal_orders"></span></li>
+                          </ul>
+                          Dietry Requirements:<br>
+                          <ul id="confirm_Dietry"></ul><br>
+                        </td>
+                        <td>
+                          <span id="total_Meal_Cost"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong class="total_cost">Total Cost</strong>
+                        </td>
+                        <td>
+                        <strong class="total_cost" id="total_cost"></strong>
+                        </td>
+                      </tr>
+                    </table>
+                    
+                <!-- Visible Text Area Comments -->
+                </fieldset>
+                <fieldset>
+                   <legend> Questions and Comments:</legend>
+                    <p>
+                      <span id="confirm_Questions"> </span><br>
+                    </p>
+
+                    <!-- Hidden Form -->
+                    <!-- Hidden Name Fields -->
+                    <article hidden>
+                      <p>
+                        First Name: <input type="text" name="first-name" id="first-name"   size="30" readonly/>
+                        <br>
+                        Last Name: <input type="text" name="Last-Name" id="Last-Name"  size="30" readonly/>
+                      </p>
+
+                      <!-- Hidden Address Fields -->
+                      <p>
+                        Address: <input type="text" name="Street-Address" id="Street-Address" size="45" readonly/>
+                        <br>
+                        Suburb/Town: <input type="text"  name="Suburb/Town" id="Suburb/Town" size="30" readonly/>
+                        <br>
+                        State: <input type="text" name="state" id="State" readonly>
+                        <br>
+                        Postal Code <input type="text" name="postal-cdoe" id="postal-code" size="10" readonly/>
+                      </p>
+                      
+                      <!-- Hidden Contact Details field Fields -->              
+                      <p>
+                        Email: <input type="text" name="customer-email" id="customer-email" size="30" readonly/>
+                        <br>
+                        Phone Number: <input type="text" name="Phone-Number" id="Phone-Number" size="20" readonly/>
+                        <br>
+                        Prefered Contact Medium: <input type="text" name="Preferred-Contact" id="Preferred-Contact" readonly>
+                      </p>
+
+                      <!-- Hidden Ticket Details field Fields -->
+                      <p>              
+                        No. Tickets: <input type="text" name="No. of Tickets" id="Passenger-Quanity" size="5" readonly>
+                        <br>
+                        Destination: <input type = "text" name="Destination" id="destination_selection2" readonly>
+                        <br>
+                        Seat Class: <input type="text" name="Seat Class" id="seat_class_selection" readonly>
+                        <br>
+                        Travel Date: <input type="date" name="Travel Date" id="date_selection" class="date_selection" min="2020-01-01" readonly>
+                      </p>
+
+                      <!-- Hidden Meals Orders -->
+                      <p>
+                        Meals Quanity: <input type="text" name="Meals-Quanity" id="Meals-Quanity" size="5" readonly/>
+                        <br>
+                        Meal Combo Selection:<input type="text" name="meal-combo" id="meal-combo" readonly/>
+                        <br>
+                        Side Selection: <input type="text" name="side-selection" id="side-selection" readonly/>
+                        <br>
+                        Drink Selection: <input type="text" name="drink-selection" id="drink-selection" readonly/>
+                    </p>
+                    <!-- Hidden Dietry Requirements Orders -->
+                    Any Dietry Requirements:<br>
+                    <p id="Dietry-Container">
+                        <label for="NO">No</label>
+                          <input type="checkbox" name="dietry-req[]" id="NO" value="No">
+                        <label for="GF">Gluten Free</label>
+                          <input type="checkbox" name="dietry-req[]" id="GF" value="Gluten Free">
+                        <label for="Soy">Soy Free</label>
+                          <input type="checkbox" name="dietry-req[]" id="Soy" value="Soy Free">
+                        <label for="Dairy">Dairy Free</label>
+                          <input type="checkbox" name="dietry-req[]" id="Dairy" value="Dairy Free">
+                    </p>
+                      <!-- Hidden Text Area -->
+                    <p>
+                      Questions and Comments
+                      <br>
+                      <textarea id="textareaabout" name="textareaabout" rows="5" cols="50" readonly></textarea>
+                    </p>
+                    <p>
+                      Total Cost: <input type="text" name="total_cost" id="total_cost_summary">
+                    </p>
+                    </article>  
+                </fieldset>
+
+              </fieldset>
+              <br>
+              <fieldset id=Form-Fieldset>
+                <!-- Credit Card Details Field -->
+                <legend>Payment Details</legend>
+                <p>
+                  Please Enter your Credit Card Details for payment.
+                </p>
+                <p>
+                  <label for="Card-Type">Credit Card Type</label>
+                  <select name="Card-Type" id="Card-Type" required="required">
+                    <option value="" selected>Please Select</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Visa">Visa</option>
+                    <option value="American-Express">American Express</option>
+                  </select>
+                  <br>
+                  <label for="Name-on-Card">Name on Credit Card</label>
+                    <input type="text" name="Name-on-Card" id="Name-on-Card" pattern="[a-zA-Z\s']{1,40}" maxlength="40" size="42" placeholder="e.g. John Smith" title="Invalid input, please use text only." required="required"/>
+                    <br>
+                  <label for="Card-Number">Credit Card Number</label>
+                    <input type="text" name="Card-Number" id="Card-Number" pattern="[\d]{15,16}" maxlength="16" size="30" placeholder="e.g. 55xxxxxxxxxxxx12" title="Invalid input, please use numbers only." required="required"/>
+                    <br>
+                  <label for="Card-Expiry">Expiry Date</label>
+                    <input type="text" name="Card-Expiry" id="Card-Expiry" pattern="([0-1][0-2]|[0][1-9])-(\d{2})" maxlength="5" size="5" placeholder="mm-yy" title="Invalid input, please format MM-YY in numerals." required="required"/>
+                    <br>
+                  <label for="CVV">CVV</label>
+                    <input type="text" name="CVV" id="CVV" pattern="\d{3,4}" maxlength="4" size="4" title="Invalid input, please put numbers only." required="required"/>
+                </p>
+                <input type="reset" id="Cancel" value="Cancel Order"><input type="submit" value="Checkout">
+
+              </fieldset>
+          </form>
+    </section>
+   
+    <footer>
+        <p>
+            <a href="mailto:100636913@student.swin.edu.au" class="footer_nav">Contact Us</a>
+            <a href="placeholder.html" class="footer_nav">Site Map</a>
+            <a href="placeholder.html" class="footer_nav">Private Policy</a>
+            <a href="placeholder.html" class="footer_nav">Terms of Use</a>
+        </p>
+    </footer>
+        
+</body>
+</html>

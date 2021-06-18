@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Enhancements" />
+  <meta name="keywords" content="Enhancements" />
+  <meta name="author" content="Edwin Cheah"  />
+ <!-- Viewport set to scale 1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.o"/>
+  
+
+  <title>Flash-Line - Enhancements</title>
+  <link rel = "icon" href="images/logo.png" type="image/favicon.ico">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/ipad.css" rel="stylesheet">
+  <link href="styles/mobile.css" rel="stylesheet">
+  <link href="styles/laptop_odd.css" rel="stylesheet">
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+</head>
+
+
+<!-- Body -->
+<body>
+    <header class=header>
+        <a href="index.html" id=logo><img src="images/logo.png" alt="Flash-Line Logo" title="Flash-Line Home"/></a>
+        <div class=Welcome>
+            <h1 id=Welcome_Title><em>Welcome to flash-line!</em></h1>
+            <h2 id=flash-tag>The fastest interstate train service on the planet!</h2>
+        </div>
+    </header>
+
+
+
+    <!-- Navigation bar below -->  
+
+    <div class=nav>
+        <button class="Mobile-Menu-Button">Menu</button>
+        <nav class=main-nav>
+            <a class="nav-button" id="nav-1" href="index.html">Home</a>
+            <a class="nav-button" href="about.html">About</a>
+            <a class="nav-button"  href="product.html">Product</a>
+            <a class="nav-button"  href="enquire.html">Enquire</a>
+			<a class="nav-button"  href="enhancements.html">Enhancements 1</a>
+			<a class="nav-button"  href="enhancements2.html">Enhancements 2</a>
+        </nav>
+    </div>
+
+
+
+     <!-- Breadcrumbs below -->    
+    <div class="bread">
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs_item"><a class="breadcrumbs_link_active" href="enhancements.html">Enhancement</a></li>
+
+    </ul> 
+</div>
+
+ <!--Aside-->
+    <aside>
+        <section id="aside">
+            <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+                <fieldset>
+                    <!-- Quick Ticket Purchase Aside -->
+                    <legend>Quick Ticket Purchase</legend>
+                    <hr>
+                    <p>
+                        <label for="Passenger-Quanity">
+                            Number of Passengers:
+                        </label>
+                        <input type="text" name="Passenger-Quanity" id="Passenger-Quanity" pattern="[1-9]{1}[0]{1}|[1-9]{1}|[0]{1}[1-9]{1}" maxlength="2" size="5" title="Invalid value. Please enter a number between 1-10 with no letters or special characters" required="required"><br>
+                        <em class="booking-limit">Please note each booking has a limit for 10 Passengers.</em>
+                    </p>
+                    <p>
+                        <label for="destination_selection">Select Destination:</label><br>
+                        <select name="Destination" id="destination_selection" required="required">
+                            <option value="">Please Select</option>
+                            <option value="National">National City</option>
+                            <option value="Star">Star City</option>
+                            <option value="Gotham">Gotham City</option>
+                            <option value="Keystone">Keystone City</option>
+                            <option value="Smallville">Smallville</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="seat_class_selection">Select Seat Type:</label><br>
+                        <select name="Seat Class" id="seat_class_selection" class="seat_class_selection" required="required">
+                            <option value="" selected>Please Select</option>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="Oliver_Queen">Oliver Queen Special</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="meal-combo">Select Meal Combo Selection:</label>
+                        <select name="mean-combo" id="meal-combo" required="required">
+                            <option value="" selected>Please Select</option>
+                            <option value="flash-burger">Big Belly Flash Burger Combo</option>
+                            <option value="green-seabass">Green Arrow Seabass Combo</option>
+                            <option value="Kyrpton-Beef">Krypton Beef Steak Combo</option>
+                            <option value="Super-veggie">Supergirl's Veggitarian Combo</option>
+                        </select>
+                    </p>
+                    <p>
+                        Any Dietry Requirements:<br>
+                        <label for="NO">No</label>
+                            <input type="checkbox" name="dietry-req" id="NO" value="No" checked>
+                        <label for="GF">Gluten Free</label>
+                            <input type="checkbox" name="dietry-req" id="GF" value="GF">
+                        <label for="Soy">Soy Free</label>
+                            <input type="checkbox" name="dietry-req" id="Soy" value="soy">
+                        <label for="Dairy">Dairy Free</label>
+                            <input type="checkbox" name="dietry-req" id="Dairy" value="dairy">
+                    </p>
+                    <p>
+                        <label for="date_selection">Select Date:</label>
+                        <input type="date" name="Travel Date" id="date_selection" required="required">
+                    </p>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </aside>
+
+
+    <!-- Enhacements Body Starts Here-->
+    <section class=body-info>   
+        <h2 class="enhancement-h2">Enhancements</h2>
+        <hr>
+        <h3>CSS Enhancements</h3>
+        <hr>
+
+        <h4>Enhancement 1 - Responsive Design for mobile and phone</h4>
+            <p>
+                I have made the website reponsive with various breakpoints for the content layout to change when view on either a mobile phone or tablet. Some things you will notice is how the header and it's sub-heading changes size when viewed on an ipad and the sub-head disapears completely when view on a mobile device and how most of the section containers change in size and witdh, clearing both sides when in mobile. The navigation bar will as well change into to a drop down menu.
+            </p>
+            <p>
+                This allows accessability to the users of the website and improves their experience and makes it more streamlined.
+            </p>
+            <p>
+                The technique combined the basic media query concepts learnt at the lectures and some light reading from W3 Schools and from Medium.com.
+            </p>
+            <strong>Source:</strong>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/css/css_display_visibility.asp">The Display Property - W3 Schools</a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@banuriwick/min-width-max-width-media-queries-994e2ec5fca3">
+                        Min-width, Max-width & Media Queries by Banuri Wickramarathna
+                    </a>
+                </li>
+            </ul>
+        <hr>
+
+        <h4>Enhancement 2 - Sliding Drop Down Mobile Menu with Just CSS</h4>
+            <p>
+                On the mobile site, I created a simple drop down menu with just CSS. This was based off a method from CSS-Tricks which makes use of the :hover pesudo class to simply reveal the menu the menu upon touch on the mobile device. This was test on an iPhone however andriod compatibility is not yet tested.
+            <p>
+                The elements being controlled by :hover are max-width. We used a simple trick of setting the height to auto to fit the current visible content between the header and breadcrumbs border, and then max-witdh and overflow:hidden to hide the navigation list, and then changed the navigation items into a block element with display:block to center them and list them down. Upon hovering or selecting the word menu, it expands out the container with a transition revealing the navigation bar. 
+            </p>
+        	<p>
+        		This method was inspired from a blog-post from CSS-Tricks.
+        	</p>
+            <strong>Source:</strong>
+            <ul>
+                <li>
+                    <a href="https://css-tricks.com/using-css-transitions-auto-dimensions/">
+                        Using CSS Transitions on Auto Dimensions - CSS-Tricks
+                    </a>
+                </li>
+            
+            </ul>
+        <hr>
+
+        <h4>Enhancement 3 - Animated Header</h4>
+            <p>
+                <a href="enhancements.html#Welcome_Title">The Animated Header is found here.</a> A refesh of the page may be needed.<br>
+                Using the background-color: linergradient, -web-kit-color-fill, web-kit-background-clip, animatation and keyframe properties together, I created a animaated header that has a linergradient scrolling past just once. This gives a sense of motion to the header which matches the theme of the site and works as a introduction to the site by zooming a gradient fill across within the text.
+            </p>
+            <p>
+               These techniques were soured from two different sites and combined together to get the result I wanted. 
+               <br>
+               The first technique of having an animated gradient was learnt from a code shared on codepen by Manuel Pinto and the second technique which shared how to put linegradients into a text was from a blog post fromcssgradient.io
+            </p>
+            <P>
+                It is to note that I have disabled the feature on the mobile and iPad Sites as from what I understand -web-kit- is not reccommened and may not be compatible across all browsers so I decided to limit the use of it onto a desktop site.
+                <br>
+                I also feel that it becomes more distracting on a smaller screen.
+            </P>
+        <strong>Source:</strong>
+        <ul>
+            <li>
+                <a href="https://codepen.io/P1N2O/pen/pyBNzX">
+                    Pure CSS Animated Gradient Background by Manuel Pinto
+                </a>
+            </li>
+            <li>
+                <a href="https://cssgradient.io/blog/css-gradient-text/">  
+                    CSS Gradient Text by CSS Gradient
+                </a>
+            </li>
+        </ul>
+        <hr>
+
+        <h4>Enhancement 4 - Loading Custom Fonts</h4>
+        <p>
+            I have loaded custom fonts into this website. It is only used in the <a href="enhancements.html#Welcome_Title">header seen above</a>. It is used to add some sort of custom styling unique to the site and also design wise matches typography of the logo found in the DC-comic's "The Flash" Television show which is what what the site is inspired from.
+        </p>
+        <p>
+            Here I used the @fornt-fact rule in CSS to load the font with the website and then used it with a class selector on my header text, it is simple but effective.
+        </p>
+    <strong>Source:</strong>
+    <ul>
+        <li>
+            <a href="https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp">
+                TCSS @font-face Rule - W3 Schools
+            </a>
+        </li>
+        <li>
+            <a href="https://medium.com/@banuriwick/min-width-max-width-media-queries-994e2ec5fca3">    
+                Elements Font Source
+            </a>
+        </li>
+    </ul>
+    <hr>
+
+        <h4>Enhancement 5 - Colour Gradient overlays for "quick link tiles".</h4>
+        <p>
+            <a href="index.html#Quick_Links_Container">Over at the home page,</a> I have used linear-gradient with background-image to create a color gradient overlay on a background image for a link. This creates a functional and interesting graphical hyper link that is more apealing to users. It also saves the time needed for a developer on photoshopping a color gradient over every single picture.
+        </p>
+        <strong>Source:</strong>
+        <ul>
+            <li>
+                <a href="https://www.w3schools.com/css/css3_gradients.asp">
+                    CSS Gradients - W3 Schools
+                </a>
+            </li>
+        </ul>
+        <hr>
+
+        <h4>Enhancement 6 - Breadcrumbs</h4>
+        <p>
+           This was a piece of code that was implimented into the site but not utilised in the end due to the structure. Never the less, this was built using a series of selectors and pesudo class selectors.
+        </p>
+        <p>
+            <a href="placeholder.html">Here is a placeholder page with it working and linking back to the homepage.</a>
+        </p>
+        <p>
+           The code was inspired from a youtube tutorial.
+        </p>
+            
+        <strong>Source:</strong>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?time_continue=561&v=SuGMFYCWXZg&feature=emb_logo">
+                    How to Create Breadcrumbs for Websites using HTML & CSS - Web Design Tutorial by Decode
+                </a>
+            </li>
+        </ul>
+        <hr>
+
+        <h4>Enhancement 7 - Title Icon</h4>
+        <p>
+            A minor HTML enhancement that uses the link tag to add a custom icon to the title bar of the website. Giving the site a consistent design theme across.
+        </p>
+        <p>
+           This usues the simple technique of using the link tage with and specificing it's type as an icon.
+        </p>
+            
+        <strong>Source:</strong>
+        <ul>
+            <li>
+                <a href="https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/">
+                How to add icon logo in title bar using HTML? - GeekforGeeks
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <h3>References</h3>
+        <hr>
+
+        <h4>Image Refereces:</h4>
+        <ul class=li-ref>
+            <li>
+                <img class="ref" src="images/logo.png" alt="flash-logo">  
+                <em>Lightning Clipart Svg - Flash Logo Coloring Page 2020</em>, in pinclipart.com, viewed 23 March 2020, https://www.pinclipart.com/pindetail/mhoJb_lightning-clipart-svg-flash-logo-coloring-page-png/.
+            </li>
+            <li>
+                <img class="ref" src="images/Announcements02.jpg" alt="Train">  
+                <em>Can you hack a train? by Drozhzhin A 2015</em>, in Kaspersky Daily viewed, 23 March 2020, https://www.kaspersky.com/blog/train-hack/10946/..
+            </li>
+            <li>
+                <img class="ref" src="images/Announcements01.jpg" alt="COVID-19">  
+                <em>outbreak-coronavirus-world-1024x506px.jpg</em>, in AFL-CIO, viewed 23 March 2020, https://ky.aflcio.org/file/20151.
+            </li>
+            <li>
+                <img class="ref" src="styles/images/708896_background.jpg" alt="Backdrop">  
+                <em>DC's The Flash</em>, in WallpaperAccess, viewed 23 March 2020, https://wallpaperaccess.com/the-flash-running.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/Product01.jpeg" alt="National City">  
+                <em>National City</em>, in Fandom, viewed 25 March 2020, https://arrow.fandom.com/wiki/National_City.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/Product02.jpeg" alt="Star City">  
+                <em>Starling City</em>, in Fandom, viewed 25 March 2020, https://greenarrow.fandom.com/wiki/Starling_City_(Arrow).
+            </li>
+            <li>
+                <img class="ref" src="images/Products/Product03.jpeg" alt="Gotham City">  
+                <em>Gotham City by Folio Illustration Agency</em>, in Dribbble, viewed 25 March 2020, https://dribbble.com/shots/4068866-Gotham-City..
+            </li>
+            <li>
+                <img class="ref" src="images/Products/Product04.jpeg" alt="Keystone City">  
+                <em>Keystone City</em>, in Anglefire.com, viewed 25 March 2020, http://www.angelfire.com/mi2/dcuniverse/keystonecentral.html.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/Product05.jpeg" alt="Smallville">  
+                <em>Smallville</em>, in Fandom, viewed 25 March 2020, https://smallville.fandom.com/wiki/Smallville.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/Economy.jpeg" alt="Economy">  
+                <em>Virgin Trains Azuma Standard Class- Image, Virgin Trains by Kevincm</em>, in Economy Class & Beyond, viewed 26 March 2020, https://economyclassandbeyond.boardingarea.com/2016/03/18/introducing-the-virgin-azuma/vt11psd010_02-00_standard-class/.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/Business.jpeg" alt="Business">  
+                <em>10 Reasons To Book A Journey On The Golden Eagle Trans-Siberian Express by Nick Walton</em>, in Thailandtaler, viewed 26 March 2020, https://www.thailandtatler.com/life/imperial-progress.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/oliverqueen.jpeg" alt="Oliver Queen">  
+                <em>Bedroom with Double Bed on a Luxury Train by Simon Pielow</em>, in Flicker, viewed 26 March 2020, https://www.flickr.com/photos/14589121@N00/4842986183.
+            </li>            
+            <li>
+                <img class="ref" src="images/Products/meal01.jpeg" alt="Big Belly Flash Burger">  
+                <em>Meanwhile at Big Belly Burgers by DarkLitria</em>, in DeviantArt, viewed 27 March 2020, https://www.deviantart.com/darklitria/art/Meanwhile-at-Big-Belly-Burgers-569642055.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/meal02.jpeg" alt="Oliver Queen's Seabass">  
+                <em>PAN FRIED SEA BASS WITH LEMON GARLIC HERB SAUCE by Lindermann E</em>, in Bowl of Delicious, viewed 27 March 2020, https://www.bowlofdelicious.com/pan-fried-sea-bass-with-lemon-garlic-herb-sauce/.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/meal03.jpeg" alt="Super Wagyu">  
+                <em>PWAGYU FLANK STEAK</em>, in Jimmy P's Burther Shop and Deli, viewed 27 March 2020, https://www.jimmypsbutchershop.com/wagyu-flank-steak.
+            </li>
+            <li>
+                <img class="ref" src="images/Products/meal04.jpeg" alt="Super Veggie">  
+                <em>40 Easy Vegetarian Recipes for Busy Weeknights by Cooking Light</em>, in Cooking Light, viewed 27 March 2020, https://www.cookinglight.com/food/vegetarian/simple-vegetarian-recipes
+            </li>
+            <li>
+                <img class="ref" src="images/Products/quiet.jpeg" alt="quiet">  
+                <em>YOU CAN NOW ASK YOUR UBER DRIVER TO BE QUIET WITHOUT OPENING YOUR MOUTH by Deitz B</em>, in Coveteur, viewed 27 March 2020, https://coveteur.com/2019/05/18/uber-black-launches-new-quiet-mode-feature/
+            </li>
+            <li>
+                <img class="ref" src="images/Products/superfriends.jpeg" alt="Super Friends">  
+                <em>The Flash / Supergirl Crossover Episode Details Revealed by Terri Schwartz</em>, in IGN.com, viewed 27 March 2020, https://au.ign.com/articles/2017/01/20/the-flash-supergirl-crossover-episode-details-revealed
+            </li>
+            <li>
+                <img class="ref" src="images/Products/jitters.jpeg" alt="Jitters">  
+                <em>The Flash (drink)</em>, in Fandom viewed 27 March 2020, https://arrow.fandom.com/wiki/The_Flash_(drink)
+                <li>
+                    <img class="ref" src="styles/images/quicklinks/ql1.jpeg" alt="Book a Ticket">  
+                    <em>Traffic Management Systems</em>, in Thales viewed 23 March 2020, https://www.thalesgroup.com/en/countries/europe/germany/transportation/traffic-management-systems.
+                </li>
+                <li>
+                    <img class="ref" src="styles/images/quicklinks/ql2.jpeg" alt="Nearest Station">  
+                    <em>Stations and Terminals</em>, in Journey Beyond Rail, viewed 23 March 2020,https://journeybeyondrail.com.au/guest-information/stations-and-terminals/.
+                </li>
+                <li>
+                    <img class="ref" src="styles/images/quicklinks/ql3.jpeg" alt="Contact Us">  
+                    <em>30 years ago today, the first commercial UK 'mobile' phone call was made by Rockman S</em>, in The Register, viewed 23 March 2020, https://www.theregister.co.uk/2015/01/01/30_years_of_mobile/.
+                </li>
+                <li>
+                    <img class="ref" src="styles/images/quicklinks/ql4.jpeg" alt="Destinations">  
+                    <em>New MRT map launched with Circle Line as focal point by Channel News Asia 2019</em>, in Channel News Asia, viewed 23 March 2020, https://www.channelnewsasia.com/news/singapore/new-mrt-train-map-circle-line-redesigned-12175906.
+                </li>
+                <li>
+                    <img class="ref" src="images/Announcements03.jpg" alt="Bruno">  
+                    <em>Bruno</em>, taken by Vy Do, Bruno is my sister's dog! viewed 23 March 2020.
+                </li>
+
+
+        </ul>
+
+    </section>
+
+    <footer>
+        <p>
+            <a href="mailto:100636913@student.swin.edu.au" class="footer_nav">Contact Us</a>
+            <a href="placeholder.html" class="footer_nav">Site Map</a>
+            <a href="placeholder.html" class="footer_nav">Private Policy</a>
+            <a href="placeholder.html" class="footer_nav">Terms of Use</a>
+        </p>
+    </footer>
+        
+</body>
+</html>

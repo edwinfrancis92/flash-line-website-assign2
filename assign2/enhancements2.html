@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Enhancements" />
+  <meta name="keywords" content="Enhancements" />
+  <meta name="author" content="Edwin Cheah"  />
+ <!-- Viewport set to scale 1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.o"/>
+  
+
+  <title>Flash-Line - Enhancements</title>
+  <link rel = "icon" href="images/logo.png" type="image/favicon.ico">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/ipad.css" rel="stylesheet">
+  <link href="styles/mobile.css" rel="stylesheet">
+  <link href="styles/laptop_odd.css" rel="stylesheet">
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+</head>
+
+
+<!-- Body -->
+<body>
+    <header class=header>
+        <a href="index.html" id=logo><img src="images/logo.png" alt="Flash-Line Logo" title="Flash-Line Home"/></a>
+        <div class=Welcome>
+            <h1 id=Welcome_Title><em>Welcome to flash-line!</em></h1>
+            <h2 id=flash-tag>The fastest interstate train service on the planet!</h2>
+        </div>
+    </header>
+
+
+
+    <!-- Navigation bar below -->  
+
+    <div class=nav>
+        <button class="Mobile-Menu-Button">Menu</button>
+        <nav class=main-nav>
+            <a class="nav-button" id="nav-1" href="index.html">Home</a>
+            <a class="nav-button" href="about.html">About</a>
+            <a class="nav-button"  href="product.html">Product</a>
+            <a class="nav-button"  href="enquire.html">Enquire</a>
+			<a class="nav-button"  href="enhancements.html">Enhancements 1</a>
+			<a class="nav-button"  href="enhancements2.html">Enhancements 2</a>
+        </nav>
+    </div>
+
+
+
+     <!-- Breadcrumbs below -->    
+    <div class="bread">
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs_item"><a class="breadcrumbs_link_active" href="enhancements2.html">Enhancements 2</a></li>
+
+    </ul> 
+</div>
+
+ <!--Aside-->
+    <aside>
+        <section id="aside">
+            <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+                <fieldset>
+                    <!-- Quick Ticket Purchase Aside -->
+                    <legend>Quick Ticket Purchase</legend>
+                    <hr>
+                    <p>
+                        <label for="Passenger-Quanity">
+                            Number of Passengers:
+                        </label>
+                        <input type="text" name="Passenger-Quanity" id="Passenger-Quanity" pattern="[1-9]{1}[0]{1}|[1-9]{1}|[0]{1}[1-9]{1}" maxlength="2" size="5" title="Invalid value. Please enter a number between 1-10 with no letters or special characters" required="required"><br>
+                        <em class="booking-limit">Please note each booking has a limit for 10 Passengers.</em>
+                    </p>
+                    <p>
+                        <label for="destination_selection">Select Destination:</label><br>
+                        <select name="Destination" id="destination_selection" required="required">
+                            <option value="">Please Select</option>
+                            <option value="National">National City</option>
+                            <option value="Star">Star City</option>
+                            <option value="Gotham">Gotham City</option>
+                            <option value="Keystone">Keystone City</option>
+                            <option value="Smallville">Smallville</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="seat_class_selection">Select Seat Type:</label><br>
+                        <select name="Seat Class" id="seat_class_selection" class="seat_class_selection" required="required">
+                            <option value="" selected>Please Select</option>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="Oliver_Queen">Oliver Queen Special</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="meal-combo">Select Meal Combo Selection:</label>
+                        <select name="mean-combo" id="meal-combo" required="required">
+                            <option value="" selected>Please Select</option>
+                            <option value="flash-burger">Big Belly Flash Burger Combo</option>
+                            <option value="green-seabass">Green Arrow Seabass Combo</option>
+                            <option value="Kyrpton-Beef">Krypton Beef Steak Combo</option>
+                            <option value="Super-veggie">Supergirl's Veggitarian Combo</option>
+                        </select>
+                    </p>
+                    <p>
+                        Any Dietry Requirements:<br>
+                        <label for="NO">No</label>
+                            <input type="checkbox" name="dietry-req" id="NO" value="No" checked>
+                        <label for="GF">Gluten Free</label>
+                            <input type="checkbox" name="dietry-req" id="GF" value="GF">
+                        <label for="Soy">Soy Free</label>
+                            <input type="checkbox" name="dietry-req" id="Soy" value="soy">
+                        <label for="Dairy">Dairy Free</label>
+                            <input type="checkbox" name="dietry-req" id="Dairy" value="dairy">
+                    </p>
+                    <p>
+                        <label for="date_selection">Select Date:</label>
+                        <input type="date" name="Travel Date" id="date_selection" required="required">
+                    </p>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </aside>
+
+
+    <!-- Enhacements Body Starts Here-->
+    <section class=body-info>   
+        <h2 class="enhancement-h2">Enhancements</h2>
+        <hr>
+        <h3>Javascript Enhancements</h3>
+        <hr>
+
+        <h4>Enhancement 1 - Dynamically Changing Meal Selection Form</h4>
+            <p>
+                The <a href="enquire.html#meal-combo">Select Meal Combo Selection</a> drop down menu has been designed to dynamically change two other drop down menus:
+            </p>
+                <ul>
+                    <li>    
+                        Select Sides Drop Down Menus
+                    </li>
+                    <li>
+                        Select Drink Drop Down Menu
+                    </li>
+                </ul>
+            <p>
+                If you select a meal combo, it will unhide the two other drop down menus and clear any pre-exsisting options and proceed to fill the options up again with an array containing the right side dish and drink information assosiated with the combo.
+                For example, if you click Big Belly lash Burger, it will change the drop down menu options below to have Chili Cheese Flash Fries and A bottle of Harry's beer as an option.<br>
+                This Enhancement also changes the value of the drop down option. Ensuring accuracy of the form's name-value pairs.
+            </p>
+            <p>
+                This was made with a combination of using nested loops and selection to transfer the values of two dimensional arrays to the options element and using a for loop to go through old data and clear them.<br>
+                While some of the clearing code was inspired from a answer to a question on Stackoverflow and Somacon.
+            </p>
+            <strong>Source:</strong>
+            <ul>
+                <li>
+                    <a href="https://stackoverflow.com/questions/3364493/how-do-i-clear-all-options-in-a-dropdown-box">How do I clear all options in a dropdown box?- Stackoverflow</a>
+                </li>
+                <li>
+                    <a href="https://www.somacon.com/p542.php">
+                        Javascript Clear Select Options Fast - Somacon
+                    </a>
+                </li>
+            </ul>
+        <hr>
+
+        <h4>Enhancement 2 - Countdown timer on payment page</h4>
+            <p>
+                <a href="payment.html">On the payment page</a> I have created a count down timer that floats to the right and sticks. It gets the current date and adds 2 minutes (in milliseconds) to the current date and compares that to another instance of the current date as a target to count down to. 
+            <p>
+                There, a set of calculations that will convert the date data to a readable format of Minutes and Seconds to be read again.
+            </p>
+        	<p>
+        		This method was heavily inspired from various Stackoverflow forums and a blogpost. A big part of code came from one particular stackoverflow forum (the first listed below) but the code was modified to suit the website's needs.
+        	</p>
+            <strong>Source:</strong>
+            <ul>
+                <li>
+                    <a href="https://stackoverflow.com/questions/50041474/javascript-countdown-timer-for-hour-minutes-and-seconds-when-a-start-button-cli">
+                        JavaScript countdown timer for hour, minutes and seconds when a start button click - Stackoverflow
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/">
+                        Build a Countdown Timer in Just 18 Lines of JavaScript - Sitepoint
+                    </a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/questions/21294302/converting-milliseconds-to-minutes-and-seconds-with-javascript">
+                        Converting milliseconds to minutes and seconds with JavaScript - Stackoverflow
+                    </a>
+                </li>
+            </ul>
+
+
+    </section>
+
+    <footer>
+        <p>
+            <a href="mailto:100636913@student.swin.edu.au" class="footer_nav">Contact Us</a>
+            <a href="placeholder.html" class="footer_nav">Site Map</a>
+            <a href="placeholder.html" class="footer_nav">Private Policy</a>
+            <a href="placeholder.html" class="footer_nav">Terms of Use</a>
+        </p>
+    </footer>
+        
+</body>
+</html>

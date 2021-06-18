@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Enquire Pay, Book a Ticket" />
+  <meta name="keywords" content="Central City Flash-Line, The Flash, Train, Ticket, Sales, Flash-Line, Interstae, Enquire, Book, Booking" />
+  <meta name="author" content="Edwin Cheah"  />
+ <!-- Viewport set to scale 1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.o"/>
+  
+
+  <title>Flash-Line - Enquire</title>
+  <link rel = "icon" href="images/logo.png" type="image/favicon.ico">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/ipad.css" rel="stylesheet">
+  <link href="styles/mobile.css" rel="stylesheet">
+  <link href="styles/laptop_odd.css" rel="stylesheet">
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+  
+</head>
+
+
+<!-- Body -->
+<body>
+    <header class=header>
+        <a href="index.html" id=logo><img src="images/logo.png" alt="Flash-Line Logo" title="Flash-Line Home"/></a>
+        <div class=Welcome>
+            <h1 id=Welcome_Title><em>Welcome to flash-line!</em></h1>
+            <h2 id=flash-tag>The fastest interstate train service on the planet!</h2>
+        </div>
+    </header>
+
+
+
+    <!-- Navigation bar below -->  
+
+    <div class=nav>
+        <button class="Mobile-Menu-Button">Menu</button>
+        <nav class=main-nav>
+            <a class="nav-button" id="nav-1" href="index.html">Home</a>
+            <a class="nav-button" href="about.html">About</a>
+            <a class="nav-button"  href="product.html">Product</a>
+            <a class="nav-button"  href="enquire.html">Enquire</a>
+            <a class="nav-button"  href="enhancements.html">Enhancements 1</a>
+            <a class="nav-button"  href="enhancements2.html">Enhancements 2</a>
+        </nav>
+    </div>
+
+
+
+     <!-- Breadcrumbs below -->   
+
+    <div class="bread">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs_item">
+          <a class="breadcrumbs_link_active" href="enquire.html">
+            Enquire
+          </a>
+        </li>
+      </ul> 
+    </div>
+
+
+
+    <!--Aside-->
+    
+    <aside>
+      <section id="aside">
+        <h3>Monthly Deals!</h3>
+        <div class="Enquire-Page-Aside-Content">
+            <img src="images/Products/superfriends.jpeg" alt="Superfriends Combo Picture!" title="Deal-01">
+            <h3 class=Subheading-Center>Superfriends Combo!</h3>
+            <hr>
+            <p>
+              Get a free <em>Big Belly Flash Burger Combo</em> with any ticket purchase of any class to <em>National City</em> between
+            </p>
+            <p>
+              <strong><em>Deal Ends 6th April to 10th April 2020</em></strong>
+            </p>
+        </div>
+        <div class="Enquire-Page-Aside-Content">     
+          <img src="images/Products/quiet.jpeg" alt="Silent Economy Seats" title="Deal-02">
+            <h3 class=Subheading-Center>Silent Economy Seats Trail</h3>
+            <hr>       
+            <p>
+              We are trialing a new silent economy seat class that are targeted for release Fall 2020, which is essentially a quiet cabin where you can kick back and relax in silence as we travel. 
+            </p>
+            <p>
+              Opt to trail for our new Silent Economy Seat Class by writting it down in the comments box upon checkout!
+            </p>
+            <p>
+              Limited Seats available.
+            </p>
+            <p> 
+              <strong><em>Deal ends April 30th 2020</em></strong>
+            </p>
+        </div>
+        <div class="Enquire-Page-Aside-Content">
+          <img src="images/Products/jitters.jpeg" alt="Jitters Coffee" title="Deal-03">
+          <h3 class=Subheading-Center>Jitters Coffee Deal!</h3>
+          <hr>
+          <p>
+            For a limited time, Flash-Line has teamed up with Jitters to sell the universes much loved coffee on our trains! We hope you enjoy it!
+          </p>
+          <p>
+            <strong><em>Deal Ends 28th May 2020</em></strong>
+          </p>
+       </div>
+      </section>
+    </aside>
+
+
+
+    <!-- Ticket Booking Form -->
+    <section class=body-info>   
+      <article id=Enquire-Container>
+        <H3>Expression of interest - Train Bookings</H3>
+        <form method="post" action="payment.html" id="enquire_form">
+          <fieldset id=Form-Fieldset>
+
+            <!-- Contact Details Field -->
+            <legend>Contact Details:</legend>
+            
+            <p>
+              <label for="first-name">First Name: </label>
+                <input type="text" name="first-name" id="first-name" pattern="[a-zA-Z]{1,25}" maxlength="25" size="30" placeholder="e.g. John" title="Invalid input, please use text only." required="required"/>
+              <br>
+              <label for="Last-Name">Last Name: </label>
+                <input type="text" name="Last-Name" id="Last-Name" pattern="[a-zA-Z]{0,25}" maxlength="25" size="30" placeholder="e.g. Smith" title="Invalid input, please use text only." required="required"/>
+              <br>
+              <label for="customer-email">Email address:</label>
+                <input type="text" name="customer-email" id="customer-email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" size="30" title="Invalid Email, please enter a vaild email address." placeholder="example@flash-line.com"/>
+            </p>
+            
+            <fieldset id=Form-Fieldset-2>
+              <legend>Address:</legend>
+                <label for="Street-Address">Street Address: </label>
+                  <input type="text" name="Street-Address" id="Street-Address" maxlength="40" size="45" placeholder="Enter Address Here." required="required">
+                <br>
+                <label for="Suburb/Town">Suburb/Town: </label>
+                  <input type="text"  name="Suburb/Town" id="Suburb/Town" maxlength="20" size="30" placeholder="Enter Suburb or Town here." required="required"/>
+                <br>
+                <label for="State">State:</label>
+                  <select name="state" id="State" required="required">
+                    <option value="" selected>Please Select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                  </select>
+                <br>
+                <label for="postal-code">Postal Code:</label>
+                  <input type="text" name="postal-cdoe" id="postal-code" maxlength="4" pattern="\d{4}" size="10" title="Invalid Postal Code. Please enter a vaild postal code." required="required">
+            </fieldset>
+
+            <p>
+              <label for="Phone-Number">Phone Number:</label>
+                <input type="text" name="Phone-Number" id="Phone-Number" pattern="[\d]{4,10}" maxlength="15" size="20" placeholder="e.g. 045900290" title="Invalid phone number. Please enter a valid phone number with no spaces" required="required">
+            </p>
+
+              Preferred Contact Method:<br>
+            <p id=Contact-Container>
+              <label for="Email">Email</label>
+                <input type="radio" id="Email" name="Preferred-Contact" value="Email" checked required="required">
+              <label for="Post">Post</label>
+                  <input type="radio" id="Post" name ="Preferred-Contact" value="Post">
+              <label for="Phone">Phone</label>
+                  <input type="radio" id="Phone" name="Preferred-Contact" value="Phone">
+            </p>
+
+            <p>
+              <label for="Passenger-Quanity">Number of Passengers:</label>
+                <input type="text" name="Passenger-Quanity" id="Passenger-Quanity" pattern="[1-9]{1}[0]{1}|[1-9]{1}|[0]{1}[1-9]{1}" maxlength="2" size="5" title="Invalid value. Please enter a number between 1-10 with no letters or special characters" required="required"><br>
+                <em class="booking-limit">Please note each booking has a limit for 10 Passengers.</em>
+            </p>
+
+            <p>
+              <label for="destination_selection2">Select Desired Destination:</label><br>
+                <select name="Destination" id="destination_selection2" required="required">
+                  <option value="">Please Select</option>
+                  <option value="National City">National City - $60</option>
+                  <option value="Star City">Star City - $25</option>
+                  <option value="Gotham City">Gotham City - $20</option>
+                  <option value="Keystone City">Keystone City - $40</option>
+                  <option value="Smallville">Smallville $50</option>
+              </select>
+              <br>
+              <em class="booking-limit">Fare displayed is standard travel fair.</em>
+            </p>
+
+            <p>
+              <label for="seat_class_selection">Select Desired Seat Type:</label><br>
+                <select name="Seat Class" id="seat_class_selection" required="required">
+                  <option value="" selected>Please Select</option>
+                  <option value="Economy">Economy - $0</option>
+                  <option value="Business">Business - $40</option>
+                  <option value="Oliver Queen Special">Oliver Queen Special - $60</option>
+              </select>
+              <br>
+              <em class="booking-limit" id="test">Fare displayed adds on to standard travel fair.</em>
+            </p>
+    
+            <p>
+              <label for="Meals-Quanity">Number of Meals:</label>
+                <input type="text" name="Meals-Quanity" id="Meals-Quanity" pattern="[1-9]{1}[0]{1}|[0]{1}[1-9]{1}|[0]{1}|\d" maxlength="2" size="5" title="Invalid value. Please enter a number between 1-10 with no letters or special characters" required="required"><br>
+                <em class="booking-limit">Please note each booking has a limit for 10 Passengers Meals.</em>
+            </p>
+            
+            <p>
+              <label for="meal-combo">Select Meal Combo Selection:</label>
+                <select name="meal-combo" id="meal-combo" required="required">
+                  <option value="" selected>Please Select</option>
+                  <option value="Big Belly Flash Burger Combo">Big Belly Flash Burger Combo - $18</option>
+                  <option value="Green Arrow Seabass Combo">Green Arrow Seabass Combo - $25</option>
+                  <option value="Krypton Beef Steak Combo">Krypton Beef Steak Combo - $30</option>
+                  <option value="Supergirl's Vegetarian Combo">Supergirl's Vegetarian Combo - $25</option>
+                </select>
+            </p>
+            <p id="sides-paragraph">
+              <label for="side-selection">Select Sides:</label>
+              <select name="side-selection" id="side-selection" required="required">
+                <option value="" selected>Please Select</option>
+    
+              </select>
+            </p>
+            <p id="drinks-paragraph">
+              <label for="drink-selection">Select Drink:</label>
+              <select name="drink-selection" id="drink-selection" required="required">
+                <option id="drink0" value="" selected>Please Select</option>
+
+              </select>
+            </p>
+            Any Dietry Requirements:<br>
+            <p id="Dietry-Container">
+                <label for="NO">No</label>
+                  <input type="checkbox" class="dietry-check" name="dietry-req[]" id="NO" value="No" checked>
+                <label for="GF">Gluten Free</label>
+                  <input type="checkbox" class="dietry-check" name="dietry-req[]" id="GF" value="Gluten Free">
+                <label for="Soy">Soy Free</label>
+                  <input type="checkbox" class="dietry-check" name="dietry-req[]" id="Soy" value="Soy Free">
+                <label for="Dairy">Dairy Free</label>
+                  <input type="checkbox" class="dietry-check" name="dietry-req[]" id="Dairy" value="Dairy Free">
+            </p>
+
+            <p>
+              <label for="date_selection">Select Desired Date:</label>
+                <input type="date" name="Travel Date" id="date_selection" class="date_selection" min="2020-01-01" required="required">
+            </p>
+            <p>
+            </p>
+            <p>
+              <textarea id="textareaabout" name="textareaabout" rows="5" cols="50" placeholder="Please write any questions regarding ticket bookings here."></textarea>
+
+            </p>
+
+            <input type="reset" value="Reset Form"><input type="submit" value="Pay Now">
+          </fieldset>
+        </form>
+      </article>
+
+    </section>
+
+    <footer>
+        <p>
+            <a href="mailto:100636913@student.swin.edu.au" class="footer_nav">Contact Us</a>
+            <a href="placeholder.html" class="footer_nav">Site Map</a>
+            <a href="placeholder.html" class="footer_nav">Private Policy</a>
+            <a href="placeholder.html" class="footer_nav">Terms of Use</a>
+        </p>
+    </footer>
+        
+</body>
+</html>

@@ -1,0 +1,281 @@
+/*
+file name: Edwin Cheah
+author: Edwin Cheah
+created: 25rd April 2020
+last modified: 5th April 2020
+description: "../index.html" "../about.html" "../product.html" "../enquire.html" "../enhancements.html" "../placeholder.html"
+*/
+
+
+
+/* iPad Portrait Only - https://medium.com/@banuriwick/min-width-max-width-media-queries-994e2ec5fca3  */
+    @media screen and (max-width: 1020px){
+
+    /*general*/
+
+    /* Boddy */
+        .body-info{
+        max-width: 50%;
+        min-width: 50%;
+        }
+
+
+    /* Welcome Header */
+        .Welcome{
+            padding: 0px;
+            color: yellow;
+            font-family: Elements;
+            text-align: center;
+            -webkit-text-fill-color: yellow;
+            text-shadow: 2px 2px 0px rgb(255, 100, 0)
+            }
+    
+        #flash-tag{
+            font-size: smaller;
+            }
+            
+    /*aside*/    
+        aside{
+            min-width: 240px;
+    
+        }
+
+
+    /* Index Page */
+        /*News*/
+            .News_and_Quick_Links_Container{
+                max-width: 60%;
+                vertical-align: text-top;
+                float: right;
+                }
+    
+        /* News Articles 1-3 */
+            .News-Article{
+                align-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin:10px;
+                width: 90%;
+                height: max-content;
+            }
+        /* Quick Links */
+            .Quick-Links{
+                width: 90%;
+                background-size: cover;
+            }
+      
+
+
+    /* About Me Page */
+        /*Introduction Paragraph Span*/
+            #About-Container span{
+                clear:both;
+                min-width: 100%;
+                padding: 10px;
+            }
+    
+        /* Edwin's Photo */
+            #Photo-Container{
+                float: none;
+                clear: both;
+            }
+            #Edwin-Photo{
+                max-width: 40%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+        /*About Table*/
+            table{
+                width: 20%;
+                height: auto;
+                font-size: smaller;
+            }
+        
+
+
+        
+    /* Products Page*/
+        /*Parent Product and Monthly Deals Contair */
+            .Products_and_Deal_Container{
+                max-width: 60%;
+                vertical-align: text-top;
+                float: right;
+            }
+
+        /* Children Parent Meal Products and Deals Container */
+            .products-container{
+                overflow: auto;
+            }
+
+        /* Weekend Table Overflow */
+            .table-overflow{
+                overflow-x: auto;
+            }
+
+        /* Children Individual Meal Products and Deals Container */
+            .Products, .Seats, .meal{
+                clear:both;
+                height: max-content;
+                width: 90%;
+                vertical-align: text-top;    
+               }
+        
+
+        
+    /*Enquire Page*/
+        /*Adjust Form Size*/
+            #Form-Fieldset{
+                min-width: 30px;
+                clear:both;
+            }
+        
+            #Form-Fieldset-2{
+                width: 250px;
+                clear:both;
+            }
+        
+            #Enquire-Container label, #Enquire-Container input{
+                width: 100%;
+            }
+
+        /* Text Area Sizing */ 
+            #textareaabout{
+                max-width: 200px;
+            }
+
+        /* Contact and Diertry Container */
+            #Contact-Container label, #Contact-Container input, #Dietry-Container label, #Dietry-Container input{
+                width: 20px;
+                vertical-align: middle;
+                margin-right: auto;
+                }
+
+
+        
+}
+        
+    
+/* iPad Landscape Only*/
+    @media screen and (min-width: 1020px) and (max-width:1024px){
+
+    /*general*/
+
+    /* Boddy */
+        .body-info{
+        max-width: 55%;
+        min-width: 55%;
+        }
+    
+    /* Welcome Header */
+        .Welcome{
+            padding: 0px;
+            color:yellow;
+            font-family: Elements;
+            text-align: center;
+            -webkit-text-fill-color: yellow;
+            text-shadow: 2px 2px 0px rgb(255, 100, 0)
+            }
+    
+        #flash-tag{
+            font-size: medium;
+            }
+       
+   /*News and Quick Links and Products and Deals Containers*/
+        .Products_and_Deal_Container, .News_and_Quick_Links_Container{
+                max-width: 65%;
+                vertical-align: text-top;
+                float: right;
+                }
+        
+
+    /* Index Page */
+        /* News Articles 1-3 */
+            .News-Article{
+                align-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 210px;
+                margin:10px;
+                height: 400px;}
+            
+        /* Quick Links */
+            .Quick-Links{
+            width: 210px;
+            }
+      
+
+
+    /* About Me Page */
+        /*Introduction Paragraph Span*/
+            #About-Container span{
+                float:left;
+                width: 500px;
+                padding: 10px;
+            }
+
+    
+        /* Edwin's Photo */
+            #Photo-Container{
+                float: none;
+                clear: both;
+            }
+
+        /*About Table*/
+            table{
+                width: 100%;
+                height: auto;
+                background-color: #ffc4a2;
+                font-size: smaller;
+            }
+        
+
+
+        
+    /* Products Page*/
+        /*Parent Product and Monthly Deals Contair */
+            .Products, .Seats, .meal{
+                height: 500px;
+                vertical-align: text-top;    
+               }
+                
+        /* Weekend Table Overflow */
+            .table-overflow{
+                overflow-x: auto;
+            }
+
+        /* Children Individual Meal Products and Deals Container */
+            .meal{
+                height: 870px;
+               }
+        
+
+        
+    /*Enquire Page*/
+        /*Adjust Form Size*/
+            #Form-Fieldset{
+                clear:both;
+            }
+        
+            #Form-Fieldset-2{
+                width: 90%;
+                clear:both;
+            }
+            
+            #Enquire-Container label, #Enquire-Container input{
+                width: 100%;
+            }
+ 
+
+        /* Contact and Diertry Container */
+            #Contact-Container label, #Contact-Container input, #Dietry-Container label, #Dietry-Container input{
+                width: 20px;
+                vertical-align: middle;
+                margin-right: auto;
+                }
+        
+}
+
+
+

@@ -1,0 +1,355 @@
+/*
+file name: Edwin Cheah
+author: Edwin Cheah
+created: 3rd April 2020
+last modified: 5th April 2020
+description: "../index.html" "../about.html" "../product.html" "../enquire.html" "../enhancements.html" "../placeholder.html"
+*/
+
+
+
+/* Mobile Portrait Only - https://medium.com/@banuriwick/min-width-max-width-media-queries-994e2ec5fca3  */
+    @media screen and (max-width: 666px){
+    /*general*/
+
+    /* Boddy */
+        .body-info{
+            max-width: 80%;
+            min-width: 80%;
+            overflow: auto;
+            float: none;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    /* Welcome Header */
+        .Welcome{
+            font-size: small;
+            color: yellow;
+            -webkit-text-fill-color: yellow;
+            text-shadow: 2px 2px 0px rgb(255, 100, 0)
+        }
+        
+        #flash-tag{
+            display: none;
+        }
+    
+    /*aside*/        
+        aside{
+            position: relative;
+            min-width: 85%;
+            float: none;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            
+        }
+
+    /* mobile navigation */
+        .nav{
+            height: auto;
+            max-height: 40px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .main-nav a{
+        display: block;
+        border-top: solid 1px rgb(218, 116, 116);
+        }
+
+        .Mobile-Menu-Button{
+            display: block;
+        }
+
+        .nav:hover{
+            height: auto;
+         max-height: 600px;
+        }
+
+
+    /* Index Page */
+        /*News*/
+            .News_and_Quick_Links_Container{
+                min-width: 100%;
+                float: none;
+                clear: both;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+        /* News Articles 1-3 */
+            .News-Article{
+                align-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin:10px;
+                min-width: 85%;
+                height: max-content;
+            }
+            /* Quick Links */
+            .Quick-Links{
+                min-width: 85%;
+                background-size: cover;
+            }
+      
+
+
+    /* About Me Page */
+        /*Introduction Paragraph Span*/
+            #About-Container span{
+                clear:both;
+                max-width: 100%;
+                padding: 10px;}
+        
+        /* Edwin's Photo */    
+            #Photo-Container{
+                float: none;
+                clear: both;
+            }
+            #Edwin-Photo{
+                max-width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+        /*About Table*/
+            table{
+                width: 20%;
+                height: auto;
+                font-size: x-small;
+                overflow-x: auto;
+            }
+        
+
+
+        
+    /* Products Page*/
+        /*Parent Product and Monthly Deals Contair */
+            .Products_and_Deal_Container{
+                max-width: 100%;
+                vertical-align: text-top;
+                float: none;
+                clear: both;
+            }
+
+        /* Children Individual Products and Deals Container */
+            .products-container{
+                overflow: auto;
+            }
+
+        /* Weekend Table Overflow */
+            .table-overflow{
+                overflow-x: auto;
+            }
+
+        /* Products, Seats and Meal Tile Container Border Settings */
+            .Products, .Seats, .meal{
+                float: left;
+                clear: both;
+                height: max-content;
+                width: 90%;
+               }
+        
+
+
+    /*Enquire Page*/
+        /*Adjust Form Size*/
+            #Form-Fieldset{
+                min-width: 30px;
+                clear:both;
+            }
+        
+            #Form-Fieldset-2{
+                width: 250px;
+                clear:both;
+            }
+        
+            #Enquire-Container label, #Enquire-Container input{
+                width: 100%;
+                vertical-align: middle;
+            }
+        
+        /* Text Area Sizing */
+            #textareaabout{
+                max-width: 200px;
+            }
+
+        /* Contact and Diertry Container */
+            #Contact-Container label, #Contact-Container input, #Dietry-Container label, #Dietry-Container input{
+                width: 20px;
+                vertical-align: middle;
+                margin-right: auto;
+                }
+            
+
+}
+        
+    
+
+
+
+/* Mobile Landscape Only - https://medium.com/@banuriwick/min-width-max-width-media-queries-994e2ec5fca3  */
+    @media screen and (min-width: 667px) and (max-width: 767px){
+
+    /*general*/
+        .body-info{
+            max-width: 85%;
+            min-width: 80%;
+            overflow: auto;
+            float: none;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    /* Welcome Header */
+        .Welcome{
+           font-size: small;
+           -webkit-text-fill-color: yellow;
+           text-shadow: 2px 2px 0px rgb(255, 100, 0)
+            }
+    
+        #flash-tag{
+            display: none;
+            }
+        
+    /*aside*/
+        aside{
+            position: relative;
+            min-width: 90%;
+            float: none;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+        }
+    
+
+
+    /* Index Page */
+        /*News*/
+            .News_and_Quick_Links_Container{
+                min-width: 100%;
+                float: none;
+                clear: both;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+        /* News Articles 1-3 */
+            .News-Article{
+                align-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin:10px;
+                min-width: 85%;
+                height: max-content;
+            }
+        /* Quick Links */
+            .Quick-Links{
+                min-width: 85%;
+                background-size: cover;
+            }
+        
+
+
+    /* About Me Page */
+        /*Introduction Paragraph Span*/
+        #About-Container span{
+            clear:both;
+            max-width: 100%;
+            padding: 10px;}
+
+        /* Edwin's Photo */
+            #Photo-Container{
+                float: none;
+                clear: both;
+            }
+            #Edwin-Photo{
+                max-width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+        /*About Table*/
+            table{
+                width: 20%;
+                height: auto;
+                font-size: smaller;
+            }
+        
+        
+
+    /* Products Page*/
+        /*Parent Product and Monthly Deals Contair */
+            .Products_and_Deal_Container{
+                max-width: 100%;
+                vertical-align: text-top;
+                float: none;
+                clear: both;
+            }
+
+        /* Children Individual Products and Deals Container */
+            .products-container{
+                overflow: auto;
+            }
+
+        /* Weekly Timetable */
+            .table-overflow{
+                overflow-x: auto;
+            }
+
+        /* Products, Seats and Meal Tile Container Border Settings */
+            .Products, .Seats, .meal{
+                float: left;
+                clear: none;
+                height: 400px;
+                vertical-align: text-top; 
+                width: 220px;
+                max-width: 100%
+               }
+
+
+
+    /*Enquire Page*/
+        /*Adjust Form Size*/
+            #Form-Fieldset{
+                min-width: 30px;
+                clear:both;
+            }
+        
+            #Form-Fieldset-2{
+                width: 250px;
+                clear:both;
+            }
+        
+            #Enquire-Container label, #Enquire-Container input{
+                width: 100%;
+            }
+        
+        /* Text Area Sizing */
+            #textareaabout{
+                max-width: 200px;
+            }
+
+
+        /* Contact and Diertry Container */
+            #Contact-Container label, #Contact-Container input, #Dietry-Container label, #Dietry-Container input{
+                width: 40px;
+                vertical-align: middle;
+                margin-right: auto;
+            }
+        
+}
+        
+    
+
+    

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Central City Flash-Line Interstate Trains Sales" />
+  <meta name="keywords" content="Central City Flash-Line, The Flash, Train, Ticket, Sales, Flash-Line, Interstae" />
+  <meta name="author" content="Edwin Cheah"  />
+ <!-- Viewport set to scale 1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.o"/>
+  
+
+  <title>Central City Flash-Line Home</title>
+  <link rel = "icon" href="images/logo.png" type="image/favicon.ico">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/ipad.css" rel="stylesheet">
+  <link href="styles/mobile.css" rel="stylesheet">
+  <link href="styles/laptop_odd.css" rel="stylesheet">
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+
+</head>
+
+
+<!-- Body -->
+<body>
+    <header class=header>
+        <a href="index.html" id=logo><img src="images/logo.png" alt="Flash-Line Logo" title="Flash-Line Home"/></a>
+        <div class=Welcome>
+        	<h1 id=Welcome_Title><em>Welcome to flash-line!</em></h1>
+        	<h2 id=flash-tag>The fastest interstate train service on the planet!</h2>
+        </div>
+    </header>
+
+
+
+    <!-- Navigation bar below -->     
+	
+	<div class=nav>
+        <button class="Mobile-Menu-Button">Menu</button>
+		<nav class=main-nav>
+			<a class="nav-button" id="nav-1" href="index.html">Home</a>
+            <a class="nav-button" href="about.html">About</a>
+            <a class="nav-button"  href="product.html">Product</a>
+            <a class="nav-button"  href="enquire.html">Enquire</a>
+			<a class="nav-button"  href="enhancements.html">Enhancements 1</a>
+			<a class="nav-button"  href="enhancements2.html">Enhancements 2</a>
+        </nav>
+    </div>    
+
+
+
+    <!-- Breadcrumbs below -->    
+    <div class="bread">
+    	<ul class="breadcrumbs">
+        	<li class="breadcrumbs_item">
+        		<a class="breadcrumbs_link_active" href="index.html">
+        			Home
+        		</a>
+        	</li>
+    	</ul> 
+	</div>
+
+
+
+ <!--Aside-->
+ 	<aside>
+    	<section id="aside">
+    		<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+	        	<fieldset>
+	        		<!-- Quick Ticket Purchase Aside -->
+	            	<legend>Quick Ticket Purchase</legend>
+	            	<hr>
+	            	<p>
+		                <label for="Passenger-Quanity">
+		                	Number of Passengers:
+		            	</label>
+		                <input type="text" name="Passenger-Quanity" id="Passenger-Quanity" pattern="[1-9]{1}[0]{1}|[1-9]{1}|[0]{1}[1-9]{1}" maxlength="2" size="5" title="Invalid value. Please enter a number between 1-10 with no letters or special characters" required="required"><br>
+		                <em class="booking-limit">Please note each booking has a limit for 10 Passengers.</em>
+	                </p>
+	            	<p>
+		                <label for="destination_selection">Select Destination:</label><br>
+		                <select name="Destination" id="destination_selection" required="required">
+		                    <option value="">Please Select</option>
+		                    <option value="National">National City</option>
+		                    <option value="Star">Star City</option>
+		                    <option value="Gotham">Gotham City</option>
+		                    <option value="Keystone">Keystone City</option>
+		                    <option value="Smallville">Smallville</option>
+		                </select>
+	            	</p>
+	           		<p>
+		                <label for="seat_class_selection">Select Seat Type:</label><br>
+		                <select name="Seat Class" id="seat_class_selection" class="seat_class_selection" required="required">
+	                    	<option value="" selected>Please Select</option>
+	                    	<option value="Economy">Economy</option>
+	                    	<option value="Business">Business</option>
+	                    	<option value="Oliver_Queen">Oliver Queen Special</option>
+	                	</select>
+            		</p>
+            		<p>
+	                	<label for="meal-combo">Select Meal Combo Selection:</label>
+	                	<select name="mean-combo" id="meal-combo" required="required">
+	                    	<option value="" selected>Please Select</option>
+	                    	<option value="flash-burger">Big Belly Flash Burger Combo</option>
+	                    	<option value="green-seabass">Green Arrow Seabass Combo</option>
+	                    	<option value="Kyrpton-Beef">Krypton Beef Steak Combo</option>
+	                    	<option value="Super-veggie">Supergirl's Veggitarian Combo</option>
+	                	</select>
+	            	</p>
+	            	<p>
+	                	Any Dietry Requirements:<br>
+	                	<label for="NO">No</label>
+	                    	<input type="checkbox" name="dietry-req" id="NO" value="No" checked>
+	                	<label for="GF">Gluten Free</label>
+	                    	<input type="checkbox" name="dietry-req" id="GF" value="GF">
+	                	<label for="Soy">Soy Free</label>
+	                    	<input type="checkbox" name="dietry-req" id="Soy" value="soy">
+	                	<label for="Dairy">Dairy Free</label>
+	                	    <input type="checkbox" name="dietry-req" id="Dairy" value="dairy">
+	            	</p>
+	            	<p>
+	                	<label for="date_selection">Select Date:</label>
+	                	<input type="date" name="Travel Date" id="date_selection" required="required">
+	            	</p>
+
+            		<input type="submit" value="Submit">
+        		</fieldset>
+    		</form>
+		</section>
+	</aside>
+
+
+
+	<!-- News and Quick Links Container Starts Here -->
+
+	<section class="News_and_Quick_Links_Container">   
+
+	     <!-- News Container -->
+	     <article id="News-Container">
+
+	        <h2>News</h2>
+					<div class="holder">
+						<div id="News-1" class="News-Article">
+							<img src="images/Announcements01.jpg" alt="COVID-19" >
+							<h3 class=Subheading-Center>COVID-19 UPDATES</h3>
+							<hr>
+							Due to the Covid-19 pandemic, Flash-Line has reducded our services to a maximum of 2 trains per destination a day.
+							Star-Labs is currently working on a cure for it, but seem like it will take awhile.
+							We strongly encourage social distancing and good hygine practice!
+							We apollogizse for any inconvinence caused.
+						</div>
+						
+						<div id="News-2" class="News-Article">            
+							<img src="images/Announcements02.jpg" alt="Flash-Line Voted">
+							<h3 Class=Subheading-Center>Flash-Line Voted fastest train in the World!</h3>
+							<hr>
+							It is a great day for Central City as Flash-Line was voted fastest train in the world! Beating Super-Trains by 1000000km/h<br>
+							We'd like to thank Star-Labs and The Flash for allowing us to work with them to use the speedforce to get lighting fast train travel speeds.
+						</div>
+						
+						<div id="News-3" class="News-Article">
+							<img src="images/Announcements03.jpg" alt="Lost-Bruno">
+							<h3 class=Subheading-Center>Lost Puppy Found!</h3>
+							<hr>
+							A lost puppy was found on one of our trains recently. He's really cute! But as much as we would like to keep him, we shouldn't. He belongs to his rightful owner!<br>
+							If you are the owner of this handsom pup or know anything about him, Please contact us via the contact us page
+						</div>
+				</div>
+	    </article>
+
+
+	    <!-- Quick Links Container -->
+	    <article id="Quick_Links_Container">
+
+	        <h2>Quick Links</h2>
+
+	        <p>
+	            <a class="Quick-Links" id="QL1" href="enquire.html#Enquire-Container">Book a ticket</a>
+	            <a class="Quick-Links" id="QL2" href="placeholder.html">Nearest Station</a>
+	            <a class="Quick-Links" id="QL3" href="mailto:100636913@student.swin.edu.au">Contact Us</a>
+	            <a class="Quick-Links" id="QL4" href="product.html#Destinations">Destinations</a>
+	            <a class="Quick-Links" id="QL5" href="product.html#Seat_Options">Seat Options</a>
+	            <a class="Quick-Links" id="QL6" href="product.html#Meals_Container">Meals</a>
+	        </p>
+
+	    </article>
+	</section>
+
+    <footer>
+        <span>&#169; Flash-Line Coporation Pte Ltd 2020.</span><br>
+        <a href="mailto:100636913@student.swin.edu.au" class="footer_nav">Contact Us</a>
+
+    </footer>
+        
+</body>
+</html>

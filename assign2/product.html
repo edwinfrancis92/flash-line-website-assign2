@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Products Page, Products" />
+  <meta name="keywords" content="Central City Flash-Line, The Flash, Train, Ticket, Sales, Flash-Line, Interstae, Products, Buy, Deals, Food" />
+  <meta name="author" content="Edwin Cheah"  />
+ <!-- Viewport set to scale 1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.o"/>
+  
+
+  <title>Flash-Line - Products</title>
+  <link rel = "icon" href="images/logo.png" type="image/favicon.ico">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/ipad.css" rel="stylesheet">
+  <link href="styles/mobile.css" rel="stylesheet">
+  <link href="styles/laptop_odd.css" rel="stylesheet">
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+</head>
+
+
+<!-- Body -->
+<body>
+    <header class=header>
+        <a href="index.html" id=logo><img src="images/logo.png" alt="Flash-Line Logo" title="Flash-Line Home"/></a>
+        <div class=Welcome>
+            <h1 id=Welcome_Title><em>Welcome to flash-line!</em></h1>
+            <h2 id=flash-tag>The fastest interstate train service on the planet!</h2>
+        </div>
+    </header>
+
+
+
+    <!-- Navigation bar below -->  
+
+    <div class=nav>
+        <button class="Mobile-Menu-Button">Menu</button>
+        <nav class=main-nav>
+            <a class="nav-button" id="nav-1" href="index.html">Home</a>
+            <a class="nav-button" href="about.html">About</a>
+            <a class="nav-button"  href="product.html">Product</a>
+            <a class="nav-button"  href="enquire.html">Enquire</a>
+			<a class="nav-button"  href="enhancements.html">Enhancements 1</a>
+			<a class="nav-button"  href="enhancements2.html">Enhancements 2</a>
+        </nav>
+    </div>
+
+     <!-- Breadcrumbs below -->    
+    <div class="bread">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_link_active"  href="product.html">
+                    Product
+                </a>
+            </li>  
+        </ul> 
+    </div>
+
+
+
+
+ <!--Aside-->
+    <aside>
+        <section id="aside">
+            <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+                <fieldset>
+                    <!-- Quick Ticket Purchase Aside -->
+                    <legend>Quick Ticket Purchase</legend>
+                    <hr>
+                    <p>
+                        <label for="Passenger-Quanity">
+                            Number of Passengers:
+                        </label>
+                        <input type="text" name="Passenger-Quanity" id="Passenger-Quanity" pattern="[1-9]{1}[0]{1}|[1-9]{1}|[0]{1}[1-9]{1}" maxlength="2" size="5" title="Invalid value. Please enter a number between 1-10 with no letters or special characters" required="required"><br>
+                        <em class="booking-limit">Please note each booking has a limit for 10 Passengers.</em>
+                    </p>
+                    <p>
+                        <label for="destination_selection">Select Destination:</label><br>
+                        <select name="Destination" id="destination_selection" required="required">
+                            <option value="">Please Select</option>
+                            <option value="National">National City</option>
+                            <option value="Star">Star City</option>
+                            <option value="Gotham">Gotham City</option>
+                            <option value="Keystone">Keystone City</option>
+                            <option value="Smallville">Smallville</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="seat_class_selection">Select Seat Type:</label><br>
+                        <select name="Seat Class" id="seat_class_selection" class="seat_class_selection" required="required">
+                            <option value="" selected>Please Select</option>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="Oliver_Queen">Oliver Queen Special</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="meal-combo">Select Meal Combo Selection:</label>
+                        <select name="mean-combo" id="meal-combo" required="required">
+                            <option value="" selected>Please Select</option>
+                            <option value="flash-burger">Big Belly Flash Burger Combo</option>
+                            <option value="green-seabass">Green Arrow Seabass Combo</option>
+                            <option value="Kyrpton-Beef">Krypton Beef Steak Combo</option>
+                            <option value="Super-veggie">Supergirl's Veggitarian Combo</option>
+                        </select>
+                    </p>
+                    <p>
+                        Any Dietry Requirements:<br>
+                        <label for="NO">No</label>
+                            <input type="checkbox" name="dietry-req" id="NO" value="No" checked>
+                        <label for="GF">Gluten Free</label>
+                            <input type="checkbox" name="dietry-req" id="GF" value="GF">
+                        <label for="Soy">Soy Free</label>
+                            <input type="checkbox" name="dietry-req" id="Soy" value="soy">
+                        <label for="Dairy">Dairy Free</label>
+                            <input type="checkbox" name="dietry-req" id="Dairy" value="dairy">
+                    </p>
+                    <p>
+                        <label for="date_selection">Select Date:</label>
+                        <input type="date" name="Travel Date" id="date_selection" required="required">
+                    </p>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </aside>
+
+
+
+<!--Produts Starts Here-->
+<!-- Monthly Deals Container  -->
+    <div class=Products_and_Deal_Container>
+        <section class="products-container">   
+            <article id="Deals">
+               <h2>Montly Deals!</h2>
+                    <div class="Products">
+                        <img src="images/Products/superfriends.jpeg" alt="Superfriends Combo Picture!" title="Deal-01">
+                        <h3 class=Subheading-Center>Superfriends Combo!</h3>
+                        <hr>
+                        <p>
+                            Get a free <em>Big Belly Flash Burger Combo</em> with any ticket purchase of any class to <em>National City</em> between
+                        </p>
+                        <p>
+                            <strong><em>Deal Ends 6th April to 10th April 2020</em></strong>
+                        </p>
+                    </div>
+                    <div class="Products">     
+                        <img src="images/Products/quiet.jpeg" alt="Silent Economy Seats" title="Deal-02">
+                        <h3 class=Subheading-Center>Silent Economy Seats Trail</h3>
+                        <hr>       
+                        <p>
+                            We are trialing a new silent economy seat class that are targeted for release Fall 2020, which is essentially a quiet cabin where you can kick back and relax in silence as we travel.
+                        </p>
+                        <p>
+                            Opt to trail for our new Silent Economy Seat Class by writting it down in the comments box upon checkout!
+                        </p>
+                        <p>
+                            Limited Seats available.
+                        </p>
+                        <p>
+                            <strong><em>Deal ends April 30th 2020</em></strong>
+                        </p>
+                   </div>
+                   <div class="Products">
+                        <img src="images/Products/jitters.jpeg" alt="Jitters Coffee" title="Deal-03">
+                        <h3 class=Subheading-Center>Jitters Coffee Deal!</h3>
+                        <hr>
+                        <p>
+                            For a limited time, Flash-Line has teamed up with Jitters to sell the universes much loved coffee on our trains! We hope you enjoy it!
+                        </p>
+                        <p>
+                            <strong><em>Deal Ends 28th May 2020</em></strong>
+                        </p>
+                   </div>
+
+           </article>
+        </section>
+
+
+
+        <!-- Products Container  -->
+        <section class="products-container"> 
+
+            <!-- Weekly Timetable -->
+            <article id=timetables>
+                <h2>Weekly Train Time Tables</h2>
+                    <h3>Current Schedule</h3>
+                    <p class="timetable-content">Please Note the scheudle has been updated in light of the current pandemic.<br>
+                        Some trains may run only once per day.
+                    </p>
+                    <div class="table-overflow">
+                         <table class="timetable-content">
+                             <thead>
+                                <tr>
+                                    <th id=Week-Timetable colspan="8">April 6 to April 12 2020</th>
+                                <tr>
+                                    <th id=time>Time</th>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                    <th>Saturday</th>
+                                    <th>Sunday</th>
+                                </tr>
+                             </thead>
+                             <tbody>
+                                <tr>
+                                    <th>00:00</th>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Star>Star City</td>
+                                </tr>
+                                <tr>
+                                    <th>06:00</th>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                </tr>
+                                <tr>
+                                    <th>08:00</th>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=National>National City</td>
+                                </tr>
+                                <tr>
+                                    <th>10:00</th>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone city</td>
+                                </tr>
+                                <tr>
+                                    <th>12:00</th>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Smallville>Smallville</td>
+                                </tr>
+                                <tr>
+                                    <th>14:00</th>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=Star>Star City</td>
+                                </tr>
+                                <tr>
+                                    <th>18:00</th>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                </tr>
+                                <tr>
+                                    <th>20:00</th>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=Smallville>Smallville</td>
+                                </tr>
+                                <tr>
+                                    <th>22:00</th>
+                                    <td class=National>National City</td>
+                                    <td class=Keystone>Keystone City</td>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=Star>Star City</td>
+                                    <td class=Gotham>Gotham City</td>
+                                    <td class=Smallville>Smallville</td>
+                                    <td class=National>National City</td>
+                                </tr>
+                             </tbody>
+                         </table>
+                    </div>
+            </article>
+
+            <!-- Destination Container -->
+             <hr id="Product-hr1">
+             <article id="Destinations">
+
+                <h2>Destination</h2>
+                
+                    <div class="Products">
+                        <img src="images/Products/Product01.jpeg" alt="Train to National City" title="Product-01">
+                        <h3 class="Subheading-Center">
+                            National City
+                        </h3>
+                        <hr>
+                        Take a trip down to National City on the Flash-Line. Explore the wonderful safe and lush city that is under the protect of Supergirl and her friends. Known as one of the happiest most hopeful place to exists!
+                    </div>
+
+                    <div class="Products">     
+                        <img src="images/Products/Product02.jpeg" alt="Train to Star City" title="Product-02">
+                        <h3 class="Subheading-Center">Star City</h3>
+                        <hr>       
+                        Feeling like living on the edge? Take a trip down to Star City, once a slum, now an upcoming city under the protection of the Green Arrow. Who knows, you might get to see a gang war break out while partying hard like Oliver Queen and maybe you'll get saved the a man in the green a hood.
+                    </div>
+
+                    <div class="Products">
+                        <img src="images/Products/Product03.jpeg" alt="Train to Gotham City" title="Product-03">
+                        <h3 class="Subheading-Center">Gotham City</h3>
+                        <hr>
+                        The city of the Batman and Batwoman. If Star City doesn't cut it for you, take a trip down to Gotham, explore Arkham Asylum and it's resisdences and appricate the city's Gothic architecture.
+                    </div>
+
+                    <div class="Products">
+                        <img src="images/Products/Product04.jpeg" alt="Train to Keystone City" title="Product-04">
+                        <h3 class="Subheading-Center">Keystone City</h3> 
+                        <hr>
+                        Once suspended in animation, protected against the again effects of time, Keystone City has started to sprout again! Home to Kid Flash and The First Flash! Go hear to explore a city coming out of the 1800s.
+                    </div>
+
+                    <div class="Products">
+                        <img src="images/Products/Product05.jpeg" alt="Train to Smallville" title="Product-05">
+                        <h3 class="Subheading-Center">Smallville</h3>
+                        <hr>
+                        Home of the great Superman, go hear to enjoy the lush farm lands. Milk the Smallville Cows, get super milk. Take a hike. Who knows you might just see the greatest superhero of all time swhooping in to visit his mum!
+                    </div>
+
+            </article>
+
+            <!-- Seats Container -->
+            <hr id="Product-hr2">
+            <article id="Seat_Options">
+
+                <h2>Seat Options</h2>
+
+                <div id="seat-1" class="Seats">
+                    <a class="Seat-Images" href="Economy.html">
+                        <img src="images/Products/Economy.jpeg" alt="Economny Class" title="Economy Class">
+                    </a>
+                    <br>
+                    <h3 class="Subheading-Center">Economy Class</h3>
+                    <hr>
+                    <ul>
+                        <li>Standard Shared Seats</li>
+                        <li>Access to Shared Toilets</li>
+                        <li>General Service and access to Stores</li>
+                    </ul>
+                </div>
+
+                <div  id="seat-2" class="Seats">
+                    <a class="Seat-Images" href="Business.html">
+                        <img src="images/Products/Business.jpeg" alt="Business Class" title="Business Class">
+                    </a>
+                    <br>
+                    <h3 class="Subheading-Center">Business Class</h3>
+                    <hr>
+                    <ul>
+                        <li>Private Seated Cabin - 4 people per cabin</li>
+                        <li>Access to Business Class Toilets - Inclusive of showers and top range toiletries</li>
+                        <li>Private Attendnat per cabin</li>
+                        <li>2 complimentary bottles of wine or 4 bottle of beer</li>
+                    </ul>
+                </div>
+
+                <div  id="seat-3" class="Seats">
+                    <a class="Seat-Images" href="Oliver_queen.html">
+                        <img src="images/Products/oliverqueen.jpeg" alt="Oliver Queen Special" title="Oliver Queen Special">
+                    </a>
+                    <br>
+                    <h3 class="Subheading-Center">Oliver Queen Special</h3>
+                    <hr>
+                    <ul>
+                        <li>Personal Private Cabin, Complete with study desk and bed</li>
+                        <li>Personal Toilet in Cabin, Inclusive of showers and top range toiletries</li>
+                        <li>Private 24/7 on call Attendnat</li>
+                        <li>Access to free-flow alcohol</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Meals Container -->
+            <hr id="Product-hr3">
+            <article id="Meals_Container">
+
+                <h2> Meals</h2>
+
+                <div class="meal">
+                    <img src="images/Products/meal01.jpeg" alt="Big Belly Flash Burger Combo" title="Big Belly Flash Burger Combo">
+                    <h3 class=Subheading-Center>Big Belly Flash Burger Combo</h3>
+                    <hr>
+                    Big Belly Burger teamed up with Team Flash to create the most electrifying burger you'll ever experience.
+                    Coupled with worm sesame buns, hot beef sauce patties, caramelised oinons and crinkle fries.
+                    <hr>
+                    <p> The Combo comes with the following options.</p>
+                    <Strong>Sides:</Strong>
+                    <ol>
+                        <li>Standard Combo - The classic Chili Cheese Flash Fries</li>
+                        <li>Vibe's Fries - Spicy Shaker Fries</li>
+                        <li>Frosts's Snow Soft Mash - A soft creamy garlic mash with gravy</li>
+                    </ol>
+                    <Strong>Drinks:</Strong>
+                    <ol>
+                        <li>Large Coke</li>
+                        <li>Large Pepsi</li>
+                        <li>A bottole of Harry's Beer</li>
+                    </ol>
+                </div>
+
+                <div class="meal">
+                    <img src="images/Products/meal02.jpeg" alt="Green Arrow Seabass" title="Green Arrow Seabass">
+                    <h3 class=Subheading-Center>Green Arrow's Seabass Combo</h3>
+                    <hr>
+                    Since Oliver Queen revealed himself to be the Green Arrow, we thought we'd reach out to work with him to develop a meal for the Flash-Line.
+                    Alas, the Green Arrow's Seabass was born. Lightly panned-fried seasbass with seasonal vegitables coupled with an amazing special tropical inspired sauce.
+                    <hr>
+                    <p> The Combo comes with the following options.</p>
+                    <Strong>Sides:</Strong>
+                    <ol>
+                        <li>Green Arrow's Baked Potatoes - Standard Baked Potatoes</li>
+                        <li>Queen's Chips - The Queens family signature chips, crispy on the outside soft on the inside</li>
+                        <li>Thea Queen's Pasta - An small serve of creamy pasta by Thea Queen</li>
+                    </ol>
+                    <Strong>Drinks:</Strong>
+                    <ol>
+                        <li>Large Coke</li>
+                        <li>Large Pepsi</li>
+                        <li>A bottle of Queen's Wine</li>
+                    </ol>
+                </div>
+
+                <div class="meal">
+                    <img src="images/Products/meal03.jpeg" alt="Krypton Beef Steak Combo" title="Kryton Beef Steak Combo">
+                    <h3 class=Subheading-Center>The Krypton Beef Steak Combo</h3>
+                    <hr>
+                    Love your meats? So does Superman (well we assume so). So here's a nice chunky yet tender wagyu beef steak. Fit for the last son of Krypton and fit for you our valued customer!
+                    Served with a side of your choice and seasonal veggies.
+                    <hr>
+                    <p> The Combo comes with the following options.</p>
+                    <Strong>Sides:</Strong>
+                    <ol>
+                        <li>Kent Farm Mac n Cheese - A Mac'n'Cheese serve made from a reciepe from Superman's Childhood</li>
+                        <li>Louis Lane's Super Mash - A homemade light creamy mash, developed by Louis Lane, Superman's wife!</li>
+                        <li>Metropolis Cheese Fries - Different from The Flash Fries, it has more bacon and has eveything that'd remind you of city life in it.</li>
+                    </ol>
+                    <Strong>Drinks:</Strong>
+                    <ol>
+                        <li>Large Coke</li>
+                        <li>Large Pepsi</li>
+                        <li>A bottle of Smallville Wineries Wine</li>
+                        <li>A bottle of Kent Farm Beer</li>
+                    </ol>
+                </div>
+
+                <div class="meal">
+                    <img src="images/Products/meal04.jpeg" alt="Supergirl's Veggie Combo" title="Supergirl's Veggie Combo">
+                    <h3 class=Subheading-Center>Supergirl's Veggie Combo</h3>
+                    <hr>
+                    Fear not vegetarians, Supergirl and Flash-Line have got your back. We teamed up with Supergirl herself to develop an amazing Vegetarian meal.
+                    We took one of Supergirl's personal favourite reciepties and added some signature flash-line flavour to it.
+                    <hr>
+                    <p> The Combo comes with the following options.</p>
+                    <Strong>Sides:</Strong>
+                    <ol>
+                        <li>Al's Dive Bar Vegan Chips - A healthier side of vegan chips made by Al</li>
+                        <li>Martian Boiled Potato Slices - An interesting dish, developed by the Martain Man-Hunter. An out of this world taste.</li>
+                        <li>Kat Co Olives - It's weird, but Kat Co has developed their own olive plantation and it tastes so good!</li>
+                    </ol>
+                    <Strong>Drinks:</Strong>
+                    <ol>
+                        <li>Large Coke</li>
+                        <li>Large Pepsi</li>
+                        <li>A bottle of National City Wineries Wine</li>
+                        <li>A bottle of Al's Dive Bar Black Beer</li>
+                    </ol>
+                </div>
+
+            </article>
+        </section>
+    </Div>
+
+<footer>
+    <p>
+        <a href="mailto:100636913@student.swin.edu.au" class="footer_nav">Contact Us</a>
+        <a href="placeholder.html" class="footer_nav">Site Map</a>
+        <a href="placeholder.html" class="footer_nav">Private Policy</a>
+        <a href="placeholder.html" class="footer_nav">Terms of Use</a>
+    </p>
+</footer>
+        
+</body>
+</html>
